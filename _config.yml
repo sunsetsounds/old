@@ -4,3 +4,6 @@ plugins:
   - jekyll-assets
   - another-jekyll-plugin
   - jekyll-seo-tag
+url: "https://sunsetsounds.github.io" # the base hostname & protocol for your site
+plugins:
+  - jekyll-sitemap
