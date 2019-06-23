@@ -103,7 +103,7 @@ header.smaller nav a {
     font-size: 12px;
 }
 
-@media all and (max-width: 750px) {
+@media all and (max-width: 940px) {
     header h1#logo {
         margin-left: 12px;
         display: block;
