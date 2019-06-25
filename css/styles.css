@@ -8,6 +8,11 @@ position:relative;
   -webkit-font-smoothing: antialiased;
 }
 
+iframe{
+  width: 1px;
+  min-width: 100%;
+  *width: 100%;
+}
 
 @font-face {
   font-family: "mainFont";
