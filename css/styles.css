@@ -73,6 +73,7 @@ header h1#logo:hover {
 header nav {
     display: inline-block;
     float: right;
+    color: #0683c9;
 }
 header nav a {
   margin-right: 25px;
@@ -93,12 +94,26 @@ header nav a:hover {
     -moz-transition: color 0.7s ease;
     transition: color 0.7s ease;
 }
+
+header img#logo{
+  display: initial;
+  border:0px;
+  padding-top:15px;
+  padding-bottom:40px;
+  width:250px;
+  height:150px;
+}
+
+header img#logosmol{
+  display: none;
+}
+
 header.smaller {
     height: 75px;
 }
 header.smaller h1#logo {
-    width: 150px;
-    height: 75px;
+    width: 100px;
+    height: 20px;
     line-height: 75px;
     font-size: 30px;
 }
@@ -106,6 +121,14 @@ header.smaller nav a {
   margin-right: 10px;
     line-height: 75px;
     font-size: 12px;
+}
+header.smaller img#logo{
+  display: none;
+  width: 200px;
+  height: 120px;
+  padding-top:15px;
+  padding-bottom:40px;
+  left: 50%;
 }
 
 @media all and (max-width: 940px) {
@@ -309,6 +332,7 @@ html {
   width: 100%;
   -webkit-text-size-adjust: 100%;
   background-color: #0c1423;
+  /* #0c1423*/
 }
 
 body {
@@ -334,7 +358,8 @@ overflow: auto;
   left: 0;
   height: 100%;
   width: 100%;
-  background: rgba(41, 63, 105, 0.6);
+  background: rgba(41,63,105,0.6);
+  /* 41,63,105,0.6*/
   z-index: 0; }
 .sect-banner .v-center {
   padding-top: 150px;
@@ -380,7 +405,7 @@ padding-top: 100px;
       background-image: url(../images/banner-1.jpg); } }
 .sect-banner ul.kf-slider li:nth-child(2) {
   background-image: url(../images/banner-2-sm.jpg);
-  background: rgba(41, 120, 155, 0.6);
+  background: rgba(255, 106, 7,1);
   -webkit-animation-delay: 5s;
   -moz-animation-delay: 5s;
   animation-delay: 5s; }
@@ -389,7 +414,7 @@ padding-top: 100px;
       background-image: url(../images/banner-2.jpg); } }
 .sect-banner ul.kf-slider li:nth-child(3) {
   background-image: url(../images/banner-3-sm.jpg);
-  background: rgba(41, 63, 170, 1);
+  background: rgba(255, 70, 8,0.9);
   -webkit-animation-delay: 10s;
   -moz-animation-delay: 10s;
   animation-delay: 10s; }

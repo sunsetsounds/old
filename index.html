@@ -1,8 +1,6 @@
 <!DOCTYPE html>
-<html>
 <html lang = "en">
 <head>
-  <html lang = "en">
   {% seo %}
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142569880-1"></script>
@@ -38,7 +36,7 @@
     function init() {
       window.addEventListener('scroll', function(e) {
         var distanceY = window.pageYOffset || document.documentElement.scrollTop,
-          shrinkOn = 300,
+          shrinkOn =100,
           header = document.querySelector("header");
         if (distanceY > shrinkOn) {
           classie.add(header, "smaller");
@@ -58,7 +56,7 @@
   <header>
     <div class="container clearfix">
       <h1 id="logo"><a href="index.html">
-          <img style="border:0px; margin-left:-25px; padding-top:15px; padding-bottom:40px; width:250px; height:150px;" src="images/logo.png">
+          <img id="logo" src="images/logo.png" alt="Sunset Sounds SF Logo">
 
         </a></h1>
       <nav>
@@ -79,12 +77,22 @@
       </ul>
       <div class="v-center">
 
-        <a href="index.html"><img style="margin-top: 130px; padding-top: 0px;padding-bottom: 0px; border:0px; top:30vh; left:100vh; width:15vh; height:15vh;" src="images/resizedLogo.png"></a>
-        <p style="margin-top: -10px; padding-top: 0px;padding-bottom: 0px;font-size:4vh; font-family:secFont; font-weight:500">Sunset Sounds</p>
-        <p style="margin-top: -30px; padding-top: 0px; font-size:2vh;">We are a small, local business located in San Francisco (and sometimes in Irvine!), California dedicated to building speakers and everything audio related. Sunset Sounds seeks to bring handcrafted
+        <a href="index.html"><img alt="Sunset Sounds SF Logo" style="margin-top: 140px; padding-top: 0px;padding-bottom: 0px; border:0px; top:30vh; left:100vh; width:15vh; height:15vh;"
+           src="images/resizedLogo.png"></a>
+        <h1 style="margin-top: 5px; padding-top: 0px;padding-bottom: 0px;font-size:4vh; font-family:secFont; font-weight:500">
+          Sunset Sounds: Who we are</h1>
+        <p style="margin-top: 15px; padding-top: 0px; font-size:2vh;">We are a small, local business located in San Francisco (and sometimes in Irvine!), California dedicated to building speakers and everything audio related. Sunset Sounds provides handcrafted
           custom portable speakers and other audio devices that feature new technologies that redesign portable bluetooth speakers and deliver premium sound experience while you relax on a beautiful California beach or unwind with hot shower after a long day.
           In addition to our custom-designed speakers, we also provide vehicular and home audio services and solutions that are sure to have your vehicle bouncing to the beat or have the landlord banging on your door. Whatever the case may be,
-          Sunset Sounds aims to put some butt-kicking bass and an awesome concert listening experience wherever you want and wherever you go</p>
+          Sunset Sounds aims to put some butt-kicking bass and an awesome concert listening experience wherever you want and wherever you go.</p>
+
+        <h2 style="margin-top: 50px; padding-top: 0px;padding-bottom: 0px;font-size:4vh; font-family:secFont; font-weight:500">
+        Custom speakers never sounded this good.</h2>
+
+        <p style="margin-top: 15px; padding-top: 0px; font-size:2vh;">
+          Sunset Sounds makes customizing your own speakers easiler than ever.
+        </p>
+
 
       </div>
     </section>
