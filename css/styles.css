@@ -30,6 +30,7 @@ iframe{
   margin: 5px;
   opacity: 0.8;
   transition: 0.5s;
+  will-change: transform;
 }
 
 .CTA2 span {
@@ -37,6 +38,7 @@ iframe{
   display: inline-block;
   position: relative;
   transition: 0.5s;
+  will-change: transform;
 }
 
 .CTA2 span:after {
@@ -46,6 +48,7 @@ iframe{
   top: 0;
   right: -30px;
   transition: 0.8s;
+  will-change: transform;
 }
 
 .CTA2:hover{
@@ -54,6 +57,7 @@ iframe{
   -webkit-transform: scaleX(2);
   -ms-transform:scaleX(2);
   transform: scaleX(2);
+  will-change: transform;
 }
 
 .CTA2:hover span {
@@ -61,7 +65,7 @@ iframe{
   -webkit-transform: scaleX(0.5);
   -ms-transform:scaleX(0.5);
   transform: scaleX(0.5);
-
+  will-change: transform;
 }
 
 .CTA2:hover span:after {
@@ -106,6 +110,7 @@ header {
     -ms-transition: height 0.3s;
     -o-transition: height 0.3s;
     transition: height 0.3s;
+    will-change: transform;
 }
 header h1#logo {
   font-size:5vh;
@@ -147,12 +152,14 @@ header nav a {
     -ms-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
+    will-change: transform;
 }
 header nav a:hover {
     color: darkorange;
     -webkit-transition: color 0.7s ease;
     -moz-transition: color 0.7s ease;
     transition: color 0.7s ease;
+    will-change: transform;
 }
 
 header img#logo{
@@ -162,6 +169,7 @@ header img#logo{
   padding-bottom:40px;
   width:250px;
   height:150px;
+  will-change: transform;
 }
 
 header img#logosmol{
