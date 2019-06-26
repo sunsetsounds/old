@@ -36,7 +36,7 @@
     function init() {
       window.addEventListener('scroll', function(e) {
         var distanceY = window.pageYOffset || document.documentElement.scrollTop,
-          shrinkOn =100,
+          shrinkOn =200,
           header = document.querySelector("header");
         if (distanceY > shrinkOn) {
           classie.add(header, "smaller");
@@ -79,19 +79,26 @@
 
         <a href="index.html"><img alt="Sunset Sounds SF Logo" style="margin-top: 140px; padding-top: 0px;padding-bottom: 0px; border:0px; top:30vh; left:100vh; width:15vh; height:15vh;"
            src="images/resizedLogo.png"></a>
-        <h1 style="margin-top: 5px; padding-top: 0px;padding-bottom: 0px;font-size:4vh; font-family:secFont; font-weight:500">
-          Sunset Sounds: Who we are</h1>
+        <h2 style="margin-top: 5px; padding-top: 0px;padding-bottom: 0px;font-size:4vh; font-family:secFont; font-weight:500">
+          Sunset Sounds: Who We Are</h2>
         <p style="margin-top: 15px; padding-top: 0px; font-size:2vh;">We are a small, local business located in San Francisco (and sometimes in Irvine!), California dedicated to building speakers and everything audio related. Sunset Sounds provides handcrafted
           custom portable speakers and other audio devices that feature new technologies that redesign portable bluetooth speakers and deliver premium sound experience while you relax on a beautiful California beach or unwind with hot shower after a long day.
           In addition to our custom-designed speakers, we also provide vehicular and home audio services and solutions that are sure to have your vehicle bouncing to the beat or have the landlord banging on your door. Whatever the case may be,
           Sunset Sounds aims to put some butt-kicking bass and an awesome concert listening experience wherever you want and wherever you go.</p>
 
-        <h2 style="margin-top: 50px; padding-top: 0px;padding-bottom: 0px;font-size:4vh; font-family:secFont; font-weight:500">
-        Custom speakers never sounded this good.</h2>
-
+        <h3 style="margin-top: 50px; padding-top: 0px;padding-bottom: 0px;font-size:4vh; font-family:secFont; font-weight:500">
+        Custom speakers never sounded this good. </h3>
         <p style="margin-top: 15px; padding-top: 0px; font-size:2vh;">
-          Sunset Sounds makes customizing your own speakers easiler than ever.
+          Sunset Sounds makes customizing your own speaker easier than ever. We have speakers for those on the go or at home.
+          Portable or stationary. Smooth frequency response, ear-piercing trebles, or soul shattering bass. Bluetooth, AUX, or even guitar inputs.
+          OLED battery displays and RGB sound reactive LEDS. For the tech savy, we have internet connected speakers (IoT) with remote turn on.
+          The choice is yours, and we are hear you. 
         </p>
+        <button class="CTA"><span>Turn it up</span></button>
+        <h3 style="margin-top: 50px; padding-top: 0px;padding-bottom: 0px;font-size:4vh; font-family:secFont; font-weight:500">
+        Or choose one of our tried and true Signature models. </h3>
+
+
 
 
       </div>
