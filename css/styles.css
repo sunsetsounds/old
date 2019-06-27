@@ -14,12 +14,42 @@ iframe{
   *width: 100%;
 }
 
+.thickLine{
+  border-radius: 10px;
+  border: 2px solid white;
+}
+
 .rainbow{
 background: linear-gradient(to right,red,green,blue);
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 }
 
+.hook{
+  background-image: url("../images/signatureWM.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  filter:invert(100%);
+  -webkit-filter:invert(100%);
+  text-align: center;
+  height: 400px;
+}
+
+.hook p{
+  border:none;
+  filter:invert(100%);
+  -webkit-filter:invert(100%);
+  padding: 0px;
+  margin-right: 1%;
+}
+.hook h2{
+  border:none;
+  margin-right: 6%;
+  filter:invert(100%);
+  -webkit-filter:invert(100%);
+  padding: 0px;
+}
 
 .CTA2 {
   border-radius: 4px;
@@ -223,6 +253,10 @@ body p{
   .CTA2{
     margin-left:50%;
     width: 40%;
+  }
+  .hook{
+    padding-left: 20px;
+    padding-right: 0px;
   }
     body p{
       padding-left: 20px;
