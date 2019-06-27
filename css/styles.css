@@ -142,13 +142,11 @@ header {
     left: 0;
     z-index: 999;
     background-image: linear-gradient(to top,rgba(255,255,255,0),rgba(255,255,255,0.3),rgba(255,255,255,1));
-    -webkit-transition: height 0.3s;
-    -moz-transition: height 0.3s;
-    -ms-transition: height 0.3s;
-    -o-transition: height 0.3s;
-    transition: height 0.3s;
-    will-change: transform,opacity;
-
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
 }
 header h1#logo {
   font-size:5vh;
@@ -186,11 +184,11 @@ header nav a {
     color: rgba(255,255,255,0.4);
     font-weight: 600;
     font-size: 20px;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -ms-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
 
 }
 header nav a:hover {
@@ -216,9 +214,9 @@ header img#logosmol{
 }
 
 header.smaller {
-    height: 75px;
+    height: 70px;
 
-}
+  }
 header.smaller h1#logo {
     width: 100px;
     height: 20px;
@@ -230,7 +228,7 @@ header.smaller nav a {
   margin-right: 10px;
     line-height: 75px;
     font-size: 14px;
-
+    
 }
 header.smaller img#logo{
   display: none;
@@ -289,7 +287,7 @@ body p{
         font-size: 15px;
     }
     header.smaller {
-        height: 75px;
+        height: 70px;
     }
     header.smaller h1#logo {
         height: 40px;
@@ -384,10 +382,6 @@ summary {
       bottom: -0.25em; }
 
 
-[hidden],
-template {
-  display: none;
-}
 
 a {
   background-color: transparent;
@@ -409,37 +403,6 @@ h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dd, small {
   margin: 0;
   padding: 0; }
 
-
-
-
-body {
-  font-size: 100%;
-}
-  @media (min-width: 36em)
-  {
-    body {
-      font-size: 110%; }
-    }
-  @media (min-width: 58em) {
-    body {
-      font-size: 120%; }
-    }
-  @media (min-width: 86em) {
-    body {
-      font-size: 130%; }
-    }
-  @media (min-width: 115em) {
-    body {
-      font-size: 160%; }
-    }
-  @media (min-width: 125em) {
-    body {
-      font-size: 170%; }
-    }
-  @media (min-width: 145em) {
-    body {
-      font-size: 180%; }
-    }
 
 /*
 #e35555 red
@@ -485,6 +448,7 @@ overflow: auto;
     text-align:
     height: 100vh;
     color: rgba(255,255,255, 1);
+    will-change: background;
   }
 /* Animation stuff idk from Stephen Scaff */
   .sect-banner:after
@@ -496,6 +460,7 @@ overflow: auto;
   height: 100%;
   width: 100%;
   background: rgba(41,63,105,0.6);
+  will-change: background,opacity;
   /* 41,63,105,0.6*/
   z-index: 0; }
 .sect-banner .v-center {
@@ -526,6 +491,7 @@ padding-top: 100px;
     -moz-animation: fade-in ease-in-out 2s 1s both;
     animation: fade-in ease-in-out 2s 1s both; }
 .sect-banner ul.kf-slider li {
+  will-change: background,opacity;
   height: 100% !important;
   width: 100%;
   position: absolute;
@@ -538,48 +504,21 @@ padding-top: 100px;
   -webkit-animation: fade-out 15s infinite both;
   -moz-animation: fade-out 15s infinite both;
   animation: fade-out 15s infinite both;
-
   }
-  @media (min-width: 58em) {
-    .sect-banner ul.kf-slider li {
-      ; } }
+
 .sect-banner ul.kf-slider li:nth-child(2) {
   background: rgba(255, 106, 7,1);
+  will-change: background,opacity;
   -webkit-animation-delay: 5s;
   -moz-animation-delay: 5s;
   animation-delay: 5s; }
-  @media (min-width: 58em) {
-    .sect-banner ul.kf-slider li:nth-child(2) {
-    } }
-.sect-banner ul.kf-slider li:nth-child(3) {
 
+.sect-banner ul.kf-slider li:nth-child(3) {
+will-change: background,opacity;
   background: rgba(255, 70, 8,0.9);
   -webkit-animation-delay: 10s;
   -moz-animation-delay: 10s;
   animation-delay: 10s; }
-  @media (min-width: 58em) {
-    .sect-banner ul.kf-slider li:nth-child(3) {
-       } }
-.sect-banner .banner-bg {
-  height: 100% !important;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50%;
-  z-index: 0;
-
-  -webkit-animation: slider-sm ease-in-out 30s both infinite;
-  -moz-animation: slider-sm ease-in-out 30s both infinite;
-  animation: slider-sm ease-in-out 30s both infinite; }
-  @media (min-width: 58em) {
-    .sect-banner .banner-bg {
-
-      -webkit-animation: slider-lg ease-in-out 30s both infinite;
-      -moz-animation: slider-lg ease-in-out 30s both infinite;
-      animation: slider-lg ease-in-out 30s both infinite; }
-    }
 
     footer {
       font-size: 2vh;
