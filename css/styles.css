@@ -142,11 +142,12 @@ header {
     left: 0;
     z-index: 999;
     background-image: linear-gradient(to top,rgba(255,255,255,0),rgba(255,255,255,0.3),rgba(255,255,255,1));
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -ms-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
+    will-change: height;
+    -webkit-transition: all 0.25s;
+    -moz-transition: all 0.25s;
+    -ms-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    transition: all 0.25s;
 }
 header h1#logo {
   font-size:5vh;
@@ -158,11 +159,7 @@ header h1#logo {
     font-family: secFont;
     color: white;
     font-weight: 500;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -ms-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
+
 }
 
 header h1#logo:hover {
@@ -180,32 +177,36 @@ header nav {
 header nav a {
   margin-right: 25px;
     line-height: 150px;
-
     color: rgba(255,255,255,0.4);
     font-weight: 600;
     font-size: 20px;
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    -ms-transition: all 1s;
-    -o-transition: all 1s;
-    transition: all 1s;
-
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
 }
 header nav a:hover {
     color: darkorange;
-    -webkit-transition: color 0.7s ease;
-    -moz-transition: color 0.7s ease;
-    transition: color 0.7s ease;
+    -webkit-transition: color 0.5s ease;
+    -moz-transition: color 0.5s ease;
+    transition: color 0.5s ease;
 
 }
 
 header img#logo{
-  display: initial;
+  opacity: 1;
   border:0px;
   padding-top:15px;
   padding-bottom:40px;
   width:250px;
   height:150px;
+  will-change: opacity;
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  -ms-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  transition: all 0.25s;
 
 }
 
@@ -214,29 +215,35 @@ header img#logosmol{
 }
 
 header.smaller {
-    height: 70px;
+    height: 40px;
 
   }
 header.smaller h1#logo {
     width: 100px;
     height: 20px;
-    line-height: 75px;
+    line-height: 20px;
     font-size: 30px;
 
 }
 header.smaller nav a {
+  font-weight: bolder;
   margin-right: 10px;
-    line-height: 75px;
+    line-height: 40px;
     font-size: 14px;
-    
+    color: black;
 }
 header.smaller img#logo{
-  display: none;
+  opacity: 0;
   width: 200px;
   height: 120px;
   padding-top:15px;
   padding-bottom:40px;
   left: 50%;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 h2, h3, h4{
@@ -287,20 +294,22 @@ body p{
         font-size: 15px;
     }
     header.smaller {
-        height: 70px;
+        height: 100px;
     }
     header.smaller h1#logo {
-        height: 40px;
-        line-height: 40px;
+      font-weight: bolder;
+        height: 30px;
+        line-height: 10px;
         font-size: 30px;
     }
     header.smaller nav {
       margin-right: 10px;
-        height: 35px;
+        height: -50px;
     }
     header.smaller nav a {
       margin-right: 10px;
-        line-height: 35px;
+        line-height: 0px;
+        font-weight: bolder;
     }
 }
 
