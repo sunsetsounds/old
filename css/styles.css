@@ -41,7 +41,7 @@ background: linear-gradient(to right,red,green,blue);
   filter:invert(100%);
   -webkit-filter:invert(100%);
   padding: 0px;
-  margin-right: 1%;
+  margin-right: 5%;
 }
 .hook h2{
   border:none;
@@ -141,7 +141,7 @@ header {
     top: 0;
     left: 0;
     z-index: 999;
-    background-image: linear-gradient(to top,rgba(255,255,255,0),rgba(255,255,255,0.3),rgba(255,255,255,1));
+    background-image: linear-gradient(to top,rgba(255,255,255,0),rgba(255,255,255,0.4),rgba(255,255,255,1));
     will-change: height;
     -webkit-transition: all 0.25s;
     -moz-transition: all 0.25s;
@@ -194,13 +194,20 @@ header nav a:hover {
 
 }
 
+header.smaller nav a:hover {
+    color: darkorange;
+    -webkit-transition: color 0.5s ease;
+    -moz-transition: color 0.5s ease;
+    transition: color 0.5s ease;
+
+}
+
 header img#logo{
   opacity: 1;
   border:0px;
   padding-top:15px;
-  padding-bottom:40px;
   width:250px;
-  height:150px;
+  height:110px;
   will-change: opacity;
   -webkit-transition: all 0.25s;
   -moz-transition: all 0.25s;
@@ -210,19 +217,13 @@ header img#logo{
 
 }
 
-header img#logosmol{
-  display: none;
-}
 
 header.smaller {
-    height: 40px;
+
 
   }
 header.smaller h1#logo {
-    width: 100px;
-    height: 20px;
-    line-height: 20px;
-    font-size: 30px;
+
 
 }
 header.smaller nav a {
@@ -234,16 +235,14 @@ header.smaller nav a {
 }
 header.smaller img#logo{
   opacity: 0;
-  width: 200px;
-  height: 120px;
-  padding-top:15px;
-  padding-bottom:40px;
-  left: 50%;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -ms-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
+  -webkit-transform:translateY(-500px);
+  transform:translateY(-500px);
+  -webkit-transition: all 0.15s;
+  -moz-transition: all 0.15s;
+  -ms-transition: all 0.15s;
+  -o-transition: all 0.15s;
+  transition: all 0.15s;
+
 }
 
 h2, h3, h4{
@@ -294,11 +293,11 @@ body p{
         font-size: 15px;
     }
     header.smaller {
-        height: 100px;
+
     }
     header.smaller h1#logo {
       font-weight: bolder;
-        height: 30px;
+        height: 10px;
         line-height: 10px;
         font-size: 30px;
     }
@@ -330,18 +329,22 @@ body {
 
 @keyframes colorchange
     {
-      0%   {background: red;}
-      50%  {background: blue;}
-      75%  {background: green;}
-      100% {background: red;}
+      0%   {background: rgba(74,135,168,1);}
+      20%  {background: rgba(123,155,196,1);}
+      40%  {background: rgba(152,135,169,1);}
+      60%  {background: rgba(195,103,116,1);}
+      80%  {background: rgba(245,105,84,1);}
+      100% {background: rgba(74,135,168,1);}
     }
 
     @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
     {
-      0%   {background: red;}
-      50%  {background: blue;}
-      75%  {background: green;}
-      100% {background: red;}
+      0%   {background: rgba(74,135,168,1);}
+      20%  {background: rgba(123,155,196,1);}
+      40%  {background: rgba(152,135,169,1);}
+      60%  {background: rgba(195,103,116,1);}
+      80%  {background: rgba(245,105,84,1);}
+      100% {background: rgba(74,135,168,1);}
     }
 
 html, body {
@@ -433,12 +436,13 @@ h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dd, small {
 #e35555 red
 #eddd2d yellow
 */
-    a {
-      font-weight: 900;
+  a {
+  font-weight: 900;
   color: rgba(11, 236, 228, 0.88);
   -webkit-transition: color 0.7s ease;
   -moz-transition: color 0.7s ease;
-  transition: color 0.7s ease; }
+  transition: color 0.7s ease;
+}
   a:hover {
     color: #ec5b5b;
     /*color: #ec5b5b; */
