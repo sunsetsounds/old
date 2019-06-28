@@ -328,6 +328,22 @@ body {
   overflow: auto;
 }
 
+@keyframes colorchange
+    {
+      0%   {background: red;}
+      50%  {background: blue;}
+      75%  {background: green;}
+      100% {background: red;}
+    }
+
+    @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+    {
+      0%   {background: red;}
+      50%  {background: blue;}
+      75%  {background: green;}
+      100% {background: red;}
+    }
+
 html, body {
   position: relative;
   overflow-x: hidden;
@@ -457,7 +473,6 @@ overflow: auto;
     text-align:
     height: 100vh;
     color: rgba(255,255,255, 1);
-    will-change: background;
   }
 /* Animation stuff idk from Stephen Scaff */
   .sect-banner:after
@@ -468,8 +483,8 @@ overflow: auto;
   left: 0;
   height: 100%;
   width: 100%;
-  background: rgba(41,63,105,0.6);
-  will-change: background,opacity;
+  animation: colorchange 60s infinite;
+  -webkit-animation: colorchange 60s infinite;
   /* 41,63,105,0.6*/
   z-index: 0; }
 .sect-banner .v-center {
@@ -499,47 +514,10 @@ padding-top: 100px;
     -webkit-animation: fade-in ease-in-out 2s 1s both;
     -moz-animation: fade-in ease-in-out 2s 1s both;
     animation: fade-in ease-in-out 2s 1s both; }
-.sect-banner ul.kf-slider li {
-  will-change: background,opacity;
-  height: 100% !important;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50%;
-  z-index: 0;
-  opacity: 0;
-  -webkit-animation: fade-out 15s infinite both;
-  -moz-animation: fade-out 15s infinite both;
-  animation: fade-out 15s infinite both;
-  }
 
-.sect-banner ul.kf-slider li:nth-child(2) {
-  background: rgba(255, 106, 7,1);
-  will-change: background,opacity;
-  -webkit-animation-delay: 5s;
-  -moz-animation-delay: 5s;
-  animation-delay: 5s; }
 
-.sect-banner ul.kf-slider li:nth-child(3) {
-will-change: background,opacity;
-  background: rgba(255, 70, 8,0.9);
-  -webkit-animation-delay: 10s;
-  -moz-animation-delay: 10s;
-  animation-delay: 10s; }
 
-    footer {
-      font-size: 2vh;
-      width: 100%;
-      text-align: center;
-      color: rgba(255, 255, 255, 0.8);
-      position: fixed;
-      z-index: 8;
-      bottom: 1vh;
-    }
-
-      @-webkit-keyframes fade-in {
+@-webkit-keyframes fade-in {
   0% {
     opacity: 0; }
   100% {
@@ -555,7 +533,7 @@ will-change: background,opacity;
   100% {
     opacity: 1; } }
 
-    @-webkit-keyframes fade-out {
+@-webkit-keyframes fade-out {
     33% {
       opacity: 1; }
     66% {
