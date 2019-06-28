@@ -14,6 +14,30 @@ iframe{
   *width: 100%;
 }
 
+.tabs{
+  border-left: 2px solid darkorange;
+   border-right: 2px solid darkorange;
+   border-top: 2px solid darkorange;
+   padding: 4px;
+   border-radius: 9px;
+   border-bottom-right-radius: 3px;
+   border-bottom-left-radius: 3px;
+   background: darkorange;
+   color:white;
+}
+
+.snazzyTabs{
+   border-left: 2px solid white;
+   border-right: 2px solid white;
+   border-top: 2px solid white;
+   padding: 4px;
+   border-radius: 4px;
+   border-bottom-right-radius: 16px;
+   border-top-left-radius: 16px;
+   background: white;
+   color:darkorange !important;
+}
+
 .thickLine{
   border-radius: 10px;
   border: 2px solid white;
@@ -41,7 +65,7 @@ background: linear-gradient(to right,red,green,blue);
   filter:invert(100%);
   -webkit-filter:invert(100%);
   padding: 0px;
-  margin-right: 5%;
+  margin-right: 3%;
 }
 .hook h2{
   border:none;
@@ -229,19 +253,19 @@ header.smaller h1#logo {
 header.smaller nav a {
   font-weight: bolder;
   margin-right: 10px;
-    line-height: 40px;
-    font-size: 14px;
+
+    font-size: 18px;
     color: black;
 }
 header.smaller img#logo{
   opacity: 0;
   -webkit-transform:translateY(-500px);
   transform:translateY(-500px);
-  -webkit-transition: all 0.15s;
-  -moz-transition: all 0.15s;
-  -ms-transition: all 0.15s;
-  -o-transition: all 0.15s;
-  transition: all 0.15s;
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  -ms-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  transition: all 0.25s;
 
 }
 
