@@ -27,15 +27,13 @@ iframe{
 }
 
 .snazzyTabs{
-   border-left: 2px solid white;
-   border-right: 2px solid white;
-   border-top: 2px solid white;
-   padding: 4px;
+   border: 2px solid white;
+   padding: 3px;
    border-radius: 4px;
    border-bottom-right-radius: 16px;
    border-top-left-radius: 16px;
    background: white;
-   color:darkorange !important;
+   color:#ee5833 !important;
 }
 
 .thickLine{
@@ -201,7 +199,7 @@ header nav {
 header nav a {
   margin-right: 25px;
     line-height: 150px;
-    color: rgba(255,255,255,0.4);
+    color: rgba(255,255,255,0.6);
     font-weight: 600;
     font-size: 20px;
     -webkit-transition: all 0.5s;
@@ -252,9 +250,6 @@ header.smaller h1#logo {
 }
 header.smaller nav a {
   font-weight: bolder;
-  margin-right: 10px;
-
-    font-size: 18px;
     color: black;
 }
 header.smaller img#logo{
