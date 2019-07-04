@@ -14,6 +14,31 @@ iframe{
   *width: 100%;
 }
 
+.picContainer{
+  margin-top: 10px;
+  margin-left: 25%;
+  margin-bottom: 500px;
+}
+
+.picContainer::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.picBorders{
+  float: left;
+width: 50%;
+padding: 5px;
+padding-top: 20px;
+padding-bottom: 0px;
+  background-color: rgba(255,255,255,0.1);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  max-width: 400px;
+  font-family: "secFont";
+}
+
+
 .tabs{
   border-left: 2px solid darkorange;
    border-right: 2px solid darkorange;
@@ -274,6 +299,9 @@ body p{
 }
 
 @media all and (max-width: 940px) {
+  .picContainer{
+    margin-left: 0;
+  }
   .CTA2{
     margin-left:50%;
     width: 40%;
@@ -369,6 +397,7 @@ body {
 html, body {
   position: relative;
   overflow-x: hidden;
+
 }
 
 *, *:before, *:after {

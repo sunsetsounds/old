@@ -1,5 +1,5 @@
-<html lang="en">
-
+<!DOCTYPE html>
+<html lang = "en">
 <head>
   {% seo %}
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -34,7 +34,7 @@
     function init() {
       window.addEventListener('scroll', function(e) {
         var distanceY = window.pageYOffset || document.documentElement.scrollTop,
-          shrinkOn = 300,
+          shrinkOn = 50,
           header = document.querySelector("header");
         if (distanceY > shrinkOn) {
           classie.add(header, "smaller");
@@ -54,7 +54,8 @@
   <header>
     <div class="container clearfix">
       <h1 id="logo"><a href="index.html">
-          <img style="border:0px; margin-left:-25px; padding-top:15px; padding-bottom:40px; width:250px; height:150px;" src="images/logo.png">
+        <img id="logo" src="images/logo.png" alt="Sunset Sounds Speakers SF Logo" title="Sunset Sounds Speakers">
+
         </a></h1>
       <nav>
         <a href="index.html">Home</a>
@@ -77,7 +78,7 @@
           Use this link here!</p></a>
         <iframe style="overflow: auto; padding-top:0px;" src="https://docs.google.com/forms/d/e/1FAIpQLSetalUxzKrJBc1aTJd_36wM0-3-3xGhO0n6wxIVH_DtPpQAJA/viewform?embedded=true" width="450vh" height="450vh" frameborder="0" marginheight="0"
           marginwidth="0" >Loading...</iframe>
-        <p style="text-align: center; padding-top:0px;">or email us at <a href="mailto:contact@sunsetsoundssf.com">contact@sunsetsoundssf.com</a></p>
+        <p style="margin-bottom: 100px;text-align: center; padding-top:0px;">or email us at <a href="mailto:contact@sunsetsoundssf.com">contact@sunsetsoundssf.com</a></p>
       </div>
     </section>
 

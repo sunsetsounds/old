@@ -34,7 +34,7 @@
     function init() {
       window.addEventListener('scroll', function(e) {
         var distanceY = window.pageYOffset || document.documentElement.scrollTop,
-          shrinkOn = 300,
+          shrinkOn = 50,
           header = document.querySelector("header");
         if (distanceY > shrinkOn) {
           classie.add(header, "smaller");
@@ -54,7 +54,7 @@
   <header>
     <div class="container clearfix">
       <h1 id="logo"><a href="index.html">
-          <img style="border:0px; margin-left:-25px; padding-top:15px; padding-bottom:40px; width:250px; height:150px;" src="images/logo.png">
+        <img id="logo" src="images/logo.png" alt="Sunset Sounds Speakers SF Logo" title="Sunset Sounds Speakers">
 
         </a></h1>
       <nav>
