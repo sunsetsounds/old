@@ -299,6 +299,9 @@ body p{
 }
 
 @media all and (max-width: 940px) {
+  .picBorders{
+    height: 450px;
+  }
   .picContainer{
     margin-left: 0;
   }
