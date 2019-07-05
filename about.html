@@ -1,5 +1,5 @@
-<html>
-
+<!DOCTYPE html>
+<html lang = "en">
 <head>
   {% seo %}
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -16,7 +16,7 @@
   </script>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Sunset Sounds | About</title>
+  <title>Sunset Sounds | Team</title>
   <link rel="stylesheet" href="css/styles.css">
   <meta name="viewport" content="width=device-width, initial-scale = 1, maximum-scale=1, user-scalable=no" />
   <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
@@ -34,7 +34,7 @@
     function init() {
       window.addEventListener('scroll', function(e) {
         var distanceY = window.pageYOffset || document.documentElement.scrollTop,
-          shrinkOn = 300,
+          shrinkOn = 50,
           header = document.querySelector("header");
         if (distanceY > shrinkOn) {
           classie.add(header, "smaller");
@@ -54,13 +54,14 @@
   <header>
     <div class="container clearfix">
       <h1 id="logo"><a href="index.html">
-          <img style="border:0px; margin-left:-25px; padding-top:15px; padding-bottom:40px; width:250px; height:150px;" src="images/logo.png">
+        <img id="logo" src="images/logo.png" alt="Sunset Sounds Speakers SF Logo" title="Sunset Sounds Speakers">
+
+
         </a></h1>
       <nav>
         <a href="index.html">Home</a>
         <a class="snazzyTabs" href="about.html">About</a>
         <a href="speakers.html">Speakers</a>
-        <a href="team.html">Meet the Team</a>
         <a href="contact.html">Contact Us!</a>
       </nav>
     </div>
@@ -73,13 +74,45 @@
         <li></li>
       </ul>
       <div class="v-center">
-        <p style="font-size:1.8vh;"> Coming Soon
-        </p>
-
-
+        <h2 style="text-align: center; margin-top: 140px; padding-top: 0px;padding-bottom: 0px;font-size:4vh; font-family:secFont; font-weight:500">
+          Who runs Sunset Sounds?</h2>
+        <div class="picContainer">
+        <div class="picBorders">
+          <img src="images/team/dn1.jpg" alt="Sunset Sounds, Derrick Ng Founder" style="width: 100%;">
+          <p style="text-align: center; font-size:23px;padding:0px;line-height:20px;">
+            Derrick Ng<br>
+            <span style="font-size:15px">
+              <b>Founder</b><br>
+              University of California, Irvine<br>
+              Aerospace Engineering <br>
+              <span style="font-size: 12px">
+              Innovation and Entrepreneurship
+            </span>
+            </span>
+          </p>
+        </div>
+        <div class="picBorders">
+          <img src="images/team/jw1.jpg" alt="Sunset Sounds, Jared Wang Founder" style="width: 100%">
+          <p style="text-align: center; font-size:23px;padding:0px;line-height:20px;">
+            Jared Wang<br>
+          <span style="font-size:15px">
+            <b>Founder</b><br>
+          San Jose State University<br>
+          Mechanical Engineering
+          <br>
+          <span style="font-size: 12px">
+          Engineering Managment
+        </span>
+        </span>
+          </p>
+        </div>
       </div>
-    </section>
 
+    </div>
+    </section>
+    <footer>
+
+  </footer>
   </main>
 </body>
 
