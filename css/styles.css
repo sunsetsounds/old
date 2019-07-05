@@ -14,6 +14,14 @@ iframe{
   *width: 100%;
 }
 
+.icon{
+  font-family: "iconFont";
+  font-weight: bold;
+  font-size: 5vh;
+  text-align: center;
+  margin:0px;
+}
+
 .picContainer{
   margin-top: 10px;
   margin-left: 25%;
@@ -177,8 +185,9 @@ background: linear-gradient(to right,red,green,blue);
 @font-face {
   /*media icons*/
   font-family: "iconFont";
-  src:url("../fonts/iconFont/PWHandySocialIcons.ttf");
+  src:url("../fonts/iconFont/SocialMediaCircled.otf");
 }
+
 
 header {
     width: 100%;
@@ -252,7 +261,8 @@ header.smaller nav a:hover {
 header img#logo{
   opacity: 1;
   border:0px;
-  padding-top:15px;
+  padding-top:10px;
+  padding-bottom: 5px;
   width:250px;
   height:110px;
   will-change: opacity;
