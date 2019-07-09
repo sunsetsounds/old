@@ -381,7 +381,7 @@ header.smaller img#logo{
 }
 
 h2, h3, h4{
-  padding-left: 100px !important;
+  text-align: center;
 }
 
 body p{
@@ -620,7 +620,7 @@ overflow: auto;
     display: table;
     width: 100%;
     margin: 0 ;
-    text-align:
+    text-align: justify;
     height: 100vh;
     color: rgba(255,255,255, 1);
   }
