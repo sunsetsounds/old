@@ -1,11 +1,11 @@
 
 html{
-  font-size: 100%;
   font-family: "mainFont";
 position:relative;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
 }
 
 iframe{
@@ -14,25 +14,55 @@ iframe{
   *width: 100%;
 }
 
+
+/* The hero image */
+.hero-image {
+  margin-top: 125px;
+  filter: blur(8px);
+   -webkit-filter: blur(8px);
+
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(255, 255, 255, 0)), url("../images/backdropSunsetSounds.jpg");
+  height: 600px;
+  /* Set a specific height */
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  font-family: "secFont";
+  text-align: right;
+  position: absolute;
+  padding: 0;
+  width: 100%;
+  margin-top: 400px;
+  top: 0px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-text p{
+  margin-right: 10px;
+  margin-left: 0 !important;
+}
+
 #slider{
   overflow: hidden;
   border-radius: 30px;
   position: center;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 10px;
+  margin-right: 10px;
   display: block;
-  opacity: 1;
-  transition: 0.4s;
-  -webkit-transition: 0.4s;
 }
-
-#slider:hover{
-  opacity: 0.7;
-  transition: 0.3s;
-  -webkit-transition: 0.3s;
-}
-
-
 
 #slider figure{
   position: relative;
@@ -48,10 +78,22 @@ iframe{
   width: 20%;
 }
 
+body p{
+  margin-left: auto;
+  margin-right: auto;
+}
+
 @media all and (min-width: 1000px){
   #slider{
     width: 75%;
-
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body p{
+    position: center;
+    margin-left: 12%;
+    margin-right: 12%;
+    display: block;
   }
 }
 
@@ -131,6 +173,11 @@ iframe{
   font-weight: 100;
 }
 
+.init{
+  color: rgba(255,255,255,0.2);
+  font-size: 5vh;
+}
+
 .picContainer{
   margin-top: 10px;
   margin-left: 25%;
@@ -205,11 +252,9 @@ background: linear-gradient(to right,red,green,blue);
   filter:invert(100%);
   -webkit-filter:invert(100%);
   padding: 0px;
-  margin-right: 3%;
 }
 .hook h2{
   border:none;
-  margin-right: 6%;
   filter:invert(100%);
   -webkit-filter:invert(100%);
   padding: 0px;
@@ -224,7 +269,6 @@ background: linear-gradient(to right,red,green,blue);
   font-family: "mainFont";
   font-size: 2.25vh;
   padding: 14px;
-  margin-left:33vw;
   width: 30%;
   transition: all 1s;
   cursor: pointer;
@@ -337,6 +381,11 @@ header nav {
     display: inline-block;
     float: right;
     color: #0683c9;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
 
 }
 header nav a {
@@ -399,8 +448,19 @@ header.smaller h1#logo {
 }
 header.smaller nav a {
   font-weight: bolder;
-    color: black;
+    color: black;;
 }
+
+header.smaller nav{
+  transform: scale(0.8) translateY(-50px);
+  -webkit-transform: scale(0.8) translateY(-50px);
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  -ms-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
 header.smaller img#logo{
   opacity: 0;
   -webkit-transform:translateY(-500px);
@@ -418,13 +478,13 @@ h2, h3, h4{
 }
 
 body p{
-  padding-left: 150px;
-  padding-right: 150px;
+
 }
+
 
 @media all and (max-width: 500px){
   .picBorders{
-    height: 450px !important;
+    height: 550px !important;
   }
 }
 
@@ -434,8 +494,8 @@ body p{
     margin-left: 0;
   }
   .CTA2{
-    margin-left:50%;
-    width: 40%;
+
+    width: 60%;
   }
   .hook{
     padding-left: 20px;
@@ -461,9 +521,13 @@ body p{
     header nav {
         display: block;
         float: none;
-        height: 50px;
         text-align: center;
         margin: 0 auto;
+        -webkit-transition: all 0.25s;
+        -moz-transition: all 0.25s;
+        -ms-transition: all 0.25s;
+        -o-transition: all 0.25s;
+        transition: all 0.25s;
     }
     header nav a {
       margin-right: 10px;
@@ -481,7 +545,13 @@ body p{
     }
     header.smaller nav {
       margin-right: 10px;
-        height: -50px;
+      transform: scale(0.8);
+      -webkit-transform: scale(0.8);
+      -webkit-transition: all 0.25s;
+      -moz-transition: all 0.25s;
+      -ms-transition: all 0.25s;
+      -o-transition: all 0.25s;
+      transition: all 0.25s;
     }
     header.smaller nav a {
       margin-right: 10px;
@@ -653,7 +723,7 @@ overflow: auto;
     display: table;
     width: 100%;
     margin: 0 ;
-    text-align: justify;
+    text-align: left;
     height: 100vh;
     color: rgba(255,255,255, 1);
   }
@@ -680,7 +750,7 @@ overflow: auto;
   vertical-align: middle;
   position: relative;
   z-index: 4;
-  padding: 0 5%;
+  padding: 0;
 }
   .sect-banner .v-center h1 {
     font-size: 150%;
@@ -690,7 +760,6 @@ overflow: auto;
 
   }
   .sect-banner .v-center p {
-
 padding-top: 100px;
     line-height: 2;
     font-size: 2.5vh;
