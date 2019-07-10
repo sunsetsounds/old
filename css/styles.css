@@ -85,7 +85,7 @@ iframe{
 
 body p{
   margin-left: auto;
-  margin-right: auto;
+  margin-right: 10px;
 }
 
 @media all and (min-width: 1000px){
