@@ -14,7 +14,6 @@ iframe{
   *width: 100%;
 }
 
-
 /* The hero image */
 .hero-image {
   margin-top: 125px;
@@ -232,7 +231,7 @@ padding-top: 20px;
 
 .thickLine{
   border-radius: 10px;
-  border: 2px solid white;
+  border: 2px solid rgba(255,255,255,0.4);
 }
 
 .rainbow{
