@@ -47,6 +47,7 @@ iframe{
   top: 0px;
   left: 50%;
   transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
   color: white;
 }
 
@@ -76,6 +77,10 @@ iframe{
 #slider figure img{
   float:left;
   width: 20%;
+}
+
+.custom{
+  max-height: 400px !important;
 }
 
 body p{
