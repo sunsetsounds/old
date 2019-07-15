@@ -186,6 +186,8 @@ body p{
   margin-top: 10px;
   margin-left: 25%;
   margin-bottom: 500px;
+  margin-right: 200px;
+
 }
 
 .picContainer::after {
@@ -496,6 +498,8 @@ body p{
 
   .picContainer{
     margin-left: 0;
+    margin-right: 0px;
+
   }
   .CTA2{
 
