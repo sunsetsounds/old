@@ -6,4 +6,4 @@ Disallow: /nogooglebot/
 User-agent: *
 Allow: /
 
-Sitemap: http://www.sunsetsoundssf.com/sitemap.xml
+Sitemap: http://sunsetsoundssf.com/sitemap.xml

@@ -18,8 +18,8 @@ iframe{
 /* The hero image */
 .hero-image {
   margin-top: 125px;
-  filter: blur(8px);
-   -webkit-filter: blur(8px);
+  filter: blur(4px);
+   -webkit-filter: blur(4px);
 
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(255, 255, 255, 0)), url("../images/backdropSunsetSounds.jpg");
@@ -88,8 +88,8 @@ iframe{
   background-color: rgba(0,0,0,0.3);
   font-family: "secFont";
   border-radius: 5px;
-  padding: 10px;
-  margin: 10px;
+  padding: 5px;
+  margin: 7px;
 }
 
 .content h3{
@@ -117,6 +117,9 @@ iframe{
   margin-left: 10px;
   margin-right: 10px;
   display: block;
+  backface-visibility: hidden;
+perspective: 1000;
+  will-change: transform;
 }
 
 #slider figure{
@@ -125,16 +128,12 @@ iframe{
   margin: 0;
   left: 0px;
   animation: 20s slider infinite;
-
+  -webkit-animation:20s slider infinite;
 }
 
 #slider figure img{
   float:left;
   width: 20%;
-}
-
-.custom{
-  max-height: 400px !important;
 }
 
 body p{
@@ -158,62 +157,62 @@ body p{
 
 @keyframes slider{
   0%{
-    left: 0;
+    transform:translateX(0);
   }
   20%{
-    left: 0;
+    transform:translateX(0);
   }
   25%{
-    left: -100%;
+    transform:translateX(-20%);
   }
   45%{
-    left:-100%;
+    transform:translateX(-20%);
   }
   50%{
-    left: -200%;
+    transform:translateX(-40%);
   }
   70%{
-    left: -200%;
+    transform:translateX(-40%);
   }
   75%{
-    left: -300%;
+    transform:translateX(-60%);
   }
   95%{
-    left: -300%;
+    transform:translateX(-60%);
   }
   100%{
-    left: -400%;
+    transform:translateX(-80%);
   }
 }
 
 
 @-webkit-keyframes slider{
   0%{
-    left: 0;
+    transform:translateX(0);
   }
   20%{
-    left: 0;
+    transform:translateX(0);
   }
   25%{
-    left: -100%;
+    transform:translateX(-20%);
   }
   45%{
-    left:-100%;
+    transform:translateX(-20%);
   }
   50%{
-    left: -200%;
+    transform:translateX(-40%);
   }
   70%{
-    left: -200%;
+    transform:translateX(-40%);
   }
   75%{
-    left: -300%;
+    transform:translateX(-60%);
   }
   95%{
-    left: -300%;
+    transform:translateX(-60%);
   }
   100%{
-    left: -400%;
+    transform:translateX(-80%);
   }
 }
 
@@ -771,7 +770,9 @@ html {
   font-size: 100%;
   width: 100%;
   -webkit-text-size-adjust: 100%;
-  background-color: #0c1423;
+  animation: colorchange 60s infinite;
+  -webkit-animation: colorchange 60s infinite;
+  will-change: background;
   /* #0c1423*/
 }
 
@@ -799,8 +800,6 @@ overflow: auto;
   left: 0;
   height: 100%;
   width: 100%;
-  animation: colorchange 60s infinite;
-  -webkit-animation: colorchange 60s infinite;
   /* 41,63,105,0.6*/
   z-index: 0; }
 .sect-banner .v-center {
