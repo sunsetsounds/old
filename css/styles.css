@@ -5,14 +5,52 @@ position:relative;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
-  scroll-behavior: smooth;
-  overflow-x: hidden;
+  scroll-behavior: smooth !important;
+  overflow-x: hidden !important;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("../images/products/SunsetSoundsSpeakersParallax.jpg");
+
+  /* Full height */
+height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 9;
+}
+
+.parallaxtext{
+  display: block;
+  text-align: justify;
+  color: white;
+}
+
+.absolute{
+    position: absolute;
+}
+
+.centering{
+  display:block;
+  max-width: 1300px;
+  margin: 0 auto!important;
+  float: 0 none;
 }
 
 iframe{
   width: 1px;
   min-width: 100%;
   *width: 100%;
+}
+
+h2,h3{
+  font-family: 'secFont';
+  font-weight: 500;
+  display: block;
 }
 
 /* The hero image */
@@ -85,7 +123,7 @@ iframe{
 
 /* Content */
 .content {
-  background-color: rgba(0,0,0,0.3);
+  background-image: linear-gradient(to bottom,rgba(0,0,0, 0.5),rgba(0,0,0, 0.5),rgba(170,100,200,0.3),rgba(200,120,100, 1),rgba(0,0,0, 0.5));
   font-family: "secFont";
   border-radius: 5px;
   padding: 5px;
@@ -94,6 +132,7 @@ iframe{
 
 .content h3{
   font-size: 22px;
+  padding-top: 2px;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
@@ -127,6 +166,7 @@ perspective: 1000;
   width: 500%;
   margin: 0;
   left: 0px;
+  will-change: transform;
   animation: 20s slider infinite;
   -webkit-animation:20s slider infinite;
 }
@@ -138,7 +178,7 @@ perspective: 1000;
 
 body p{
   margin-left: auto;
-  margin-right: 10px;
+  margin-right: 23px;
 }
 
 @media all and (min-width: 1000px){
@@ -256,7 +296,7 @@ width: 50%;
 padding: 5px;
 padding-top: 20px;
  height:100%;
-  background-image: linear-gradient(to bottom left,rgba(255, 255,255, 0.5),rgba(0,0,0, 0));
+  background-image: linear-gradient(to bottom right,rgba(0,0,0, 0.5),rgba(0,0,0, 0));
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   max-width: 400px;
   font-family: "secFont";
@@ -329,10 +369,10 @@ background: linear-gradient(to right,red,green,blue);
   font-family: "mainFont";
   font-size: 2.25vh;
   padding: 14px;
-  width: 30%;
+  width: 200px;
   transition: all 1s;
   cursor: pointer;
-
+  display: inline-block;
   opacity: 0.8;
   transition: 1s;
   font-weight: bolder;
@@ -410,8 +450,7 @@ header {
     top: 0;
     left: 0;
     z-index: 999;
-    background-image: linear-gradient(to top,rgba(255,255,255,0),rgba(255,255,255,0.4),rgba(255,255,255,1));
-    will-change: height;
+    background-image: linear-gradient(to top,rgba(255,255,255,0),rgba(255,255,255,0.9));
     -webkit-transition: all 0.25s;
     -moz-transition: all 0.25s;
     -ms-transition: all 0.25s;
@@ -494,8 +533,7 @@ header img#logo{
 
 
 header.smaller {
-
-
+  height: 60px;
   }
 header.smaller h1#logo {
   -webkit-transform:translateY(-500px);
@@ -537,10 +575,6 @@ h2, h3, h4{
   text-align: center;
 }
 
-body p{
-
-}
-
 
 @media all and (max-width: 500px){
   .picBorders{
@@ -556,8 +590,7 @@ body p{
 
   }
   .CTA2{
-
-    width: 60%;
+    width: 40%;
   }
   .hook{
     padding-left: 20px;
@@ -625,12 +658,14 @@ body p{
 
 
 body {
-  color: #000000;
+  color: white;
   margin: 0;
   height: 100%;
   width: 100%;
   font-weight: 500;
-  font-style: bold;
+  font-family: 'secFont';
+  font-size: 2vh;
+  line-height: 2;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -770,10 +805,13 @@ html {
   font-size: 100%;
   width: 100%;
   -webkit-text-size-adjust: 100%;
+  /*
   animation: colorchange 60s infinite;
   -webkit-animation: colorchange 60s infinite;
   will-change: background;
-  /* #0c1423*/
+
+   #0c1423*/
+   background-color: rgba(0,0,0,0.6) !important;
 }
 
 body {
