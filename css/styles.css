@@ -675,12 +675,22 @@ body {
 
 @keyframes colorchange
     {
+		
       0%   {background: rgba(74,135,168,1);}
+      20%  {background: rgba(123,155,196,1);}
+      40%  {background: rgba(152,135,169,1);}
+      60%  {background: rgba(195,103,116,1);}
+      80%  {background: rgba(146, 37, 12);}
+      100% {background: rgba(74,135,168,1);}
+	  /*
+	  
+	  0%   {background: rgba(74,135,168,1);}
       20%  {background: rgba(123,155,196,1);}
       40%  {background: rgba(152,135,169,1);}
       60%  {background: rgba(195,103,116,1);}
       80%  {background: rgba(245,105,84,1);}
       100% {background: rgba(74,135,168,1);}
+	  */
     }
 
     @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
@@ -689,7 +699,7 @@ body {
       20%  {background: rgba(123,155,196,1);}
       40%  {background: rgba(152,135,169,1);}
       60%  {background: rgba(195,103,116,1);}
-      80%  {background: rgba(245,105,84,1);}
+      80%  {background: rgba(146, 37, 12);}
       100% {background: rgba(74,135,168,1);}
     }
 
@@ -806,13 +816,12 @@ html {
   font-size: 100%;
   width: 100%;
   -webkit-text-size-adjust: 100%;
-  /*
-  animation: colorchange 60s infinite;
-  -webkit-animation: colorchange 60s infinite;
+  
+  animation: colorchange 45s infinite;
+  -webkit-animation: colorchange 45s infinite;
   will-change: background;
 
    #0c1423*/
-   background-color: rgba(0,0,0,0.6) !important;
 }
 
 body {
